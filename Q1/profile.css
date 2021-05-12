@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm&display=swap');
+
+*{
+    list-style: none;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    
+}
+body{
+    background-image: url(images/bg6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.profile_card{
+    font-size: large;
+    font-weight: bolder;
+    text-align: center;
+    position: relative;
+    margin:auto;
+    width: 30%;
+    justify-content: center;
+    /* border: 0px solid rgb(0, 0, 0); */
+    align-items: center;
+    margin-top:2%;
+    box-shadow: 2px 2px 12px rgb(15, 186, 224);
+    line-height: 48px;
+    /* transform-style: preserve-3d;
+    transform: perspective(1000px); */
+}
+.profile_card::before{
+    content: 'PROFILE';
+    margin-bottom: 20px;
+}
+.profile_head{
+    margin:auto;
+    width: 30%;
+    justify-content: center;
+    border: 2px solid black;
+    align-items: center;
+    margin-bottom: 0%;
+    margin-top:5%;
+    box-shadow: 2px 2px 12px blue;
+    padding: 5px;
+    transform: translateZ(30px);
+}
+.image{
+    margin: auto;
+    /* width: 50%; */
+    padding: 20px;
+    /* border: 2px solid black; */
+    border-radius: 200%;
+    height: 100%;
+    width: 20%;
+    /* background-color: white; */
+}
+.details{
+    padding: 10px;
+    font-size: 25px;
+    
+}
+.list{
+    margin-top: 20px;
+    padding: 10px;
+    font-family: 'Charm', cursive;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgb(25, 199, 161);
+}
+.containers{
+    height: 100vh;
+}
+.res{
+    width: 90%;
+    height: auto;
+}
+.share{
+    text-align: start;
+    font-size: medium;
+}
+.share::before{
+    content: 'Wanna Share your details?';
+    display: block  ;
+}
+
+
+.center {
+    top: 50%;
+    /* left: 50%; */
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 50px;
+  }
+  
+  .center:before,
+  .center:after,
+  .center div {
+    background: #fff;
+    content: "";
+    display: block;
+    height: 6px;
+    border-radius: 3px;
+    margin: 7px 0;
+    transition: 0.5s;
+  }
+  .center:hover:before {
+    transform: translateY(12px) rotate(135deg);
+  }
+  .center:hover:after {
+    transform: translateY(-12px) rotate(-135deg);
+  }
+  .center:hover div {
+    transform: scale(0);
+  }
+  
